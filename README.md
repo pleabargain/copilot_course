@@ -1,14 +1,7 @@
 # current situation
-Not working because of error.
+Code should work out of the box if you have installed all the requirements.
 
-```
-PS C:\Users\denni\OneDrive\Documents\copilot_course\first_case\expense_calculator> py manage.py makemigrations
-SystemCheckError: System check identified some issues:
-
-ERRORS:
-expenses.Expense.category: (fields.E300) Field defines a relation with model 'category', which is either not installed, or is abstract.
-expenses.Expense.category: (fields.E307) The field expenses.Expense.category was declared with a lazy reference to 'expenses.category', but app 'expenses' doesn't provide model 'category'.
-```
+No. I have published a requirements.txt file.
 
 
 Q: Where is this file?
