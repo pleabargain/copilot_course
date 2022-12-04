@@ -41,5 +41,20 @@ You should see something like:
 YMMV!
 
 ---
+# error on ADD
+Getting an error
+```
+TypeError at /admin/expenses/expense/add/
+unsupported operand type(s) for -: 'str' and 'decimal.Decimal'
+Request Method:	POST
+Request URL:	http://127.0.0.1:8000/admin/expenses/expense/add/
+Django Version:	4.1.1
+Exception Type:	TypeError
+Exception Value:	
+unsupported operand type(s) for -: 'str' and 'decimal.Decimal'
+Exception Location:	C:\Users\denni\OneDrive\Documents\copilot_course\first_case\expense_calculator\expenses\models.py, line 26, in __str__
+Raised during:	django.contrib.admin.options.add_view
+Python Executable:	C:\Users\denni\AppData\Local\Programs\Python\Python310\python.exe
+```
 
 
