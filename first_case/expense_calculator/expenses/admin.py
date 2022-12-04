@@ -10,9 +10,18 @@ from .models import Expense
 
 
 @admin.register(Expense)
-class ExpenseAdmin(admin.ModelAdmin):   
-    list_display = ('id','name', 'amount', 'timestamp', 'description', 'category')
-    list_display_links = ('id', 'name','amount', 'timestamp', 'description', 'category'   )
-    list_filter = ('name', 'timestamp')
-    search_fields = ('name', 'amount','timestamp', 'description')
-    # category = ('name', 'amount', 'timestamp', 'description', 'category')
+class ExpenseAdmin(admin.ModelAdmin): 
+
+    """
+    these are the expense model fields
+    name = models.CharField(max_length=100)
+    amount = models.DecimalField(max_digits=10, decimal_places=2)
+    timestamp = models.DateTimeField(auto_now_add=True)   
+    category = models.ForeignKey('category', on_delete=models.CASCADE)
+    description = models.TextField()
+    """ 
+    list_display = ('name', 'amount', 'category', 'timestamp')
+    # list filter must be a tuple
+    list_filter = ('timestamp', 'category')
+    search_fields = ('name', 'category')
+    # ordering = ('-timestamp',)

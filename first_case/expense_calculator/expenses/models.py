@@ -8,8 +8,18 @@ class Expense(models.Model):
     name = models.CharField(max_length=100)
     amount = models.DecimalField(max_digits=10, decimal_places=2)
     timestamp = models.DateTimeField(auto_now_add=True)   
-    category = models.ForeignKey('category', on_delete=models.CASCADE)
-    description = models.TextField()
+    # category = models.ForeignKey('category', on_delete=models.CASCADE)
+    CATEGORY_CHOICES = (
+        ('Food', 'Food'),
+        ('Travel', 'Travel'),
+        ('Entertainment', 'Entertainment'),
+        ('Health', 'Health'),
+        ('Education', 'Education'),
+        ('Other', 'Other')
+        )
+    category = models.CharField(max_length=100, choices=CATEGORY_CHOICES, default='Other')
+
+    # description = models.TextField()
 
     def __str__(self):
         return f'{self.name - self.amount}'
