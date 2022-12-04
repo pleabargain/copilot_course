@@ -9,4 +9,4 @@ https://www.linkedin.com/learning/ai-pair-programming-with-github-copilot/creati
 
 ---
 
-Can't say that I am super happy. The results in the class are NOT what I'm getting locally. The instructor didn't provide the source code for the working examples in the course.
+Can't say that I am super happy. The results in the class are NOT what I'm getting locally. The instructor, Ronnie Sheer (https://www.linkedin.com/learning/instructors/ronnie-sheer) didn't provide the source code for the working examples in the course.
