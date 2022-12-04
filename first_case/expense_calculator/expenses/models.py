@@ -12,6 +12,7 @@ class Expense(models.Model):
     CATEGORY_CHOICES = (
         ('Food', 'Food'),
         ('Travel', 'Travel'),
+        ('Utilities', 'Utilities'),
         ('Entertainment', 'Entertainment'),
         ('Health', 'Health'),
         ('Education', 'Education'),
