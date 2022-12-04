@@ -1,4 +1,8 @@
 from django.db import models
+# trying to fix this error
+# django unsupported operand type(s) for -: 'str' and 'decimal.Decimal'
+from decimal import Decimal
+
  # Create your models here.
 
 class Expense(models.Model):    

@@ -1,8 +1,15 @@
 # current situation
 Code should work out of the box if you have installed all the requirements.
 
-No. I have published a requirements.txt file.
+No. I have not published a requirements.txt file.
 
+I did double check to see if
+
+```pip show djangorestframework```
+
+but it was there and my router error hasn't gone away:
+
+```ModuleNotFoundError: No module named 'router'```
 ---
 
 Q: Where is this file?
@@ -41,8 +48,16 @@ You should see something like:
 YMMV!
 
 ---
-# error on ADD
+# error ModuleNotFoundError: No module named 'router'
+I imported router in urls.py
+```
+from django.db import router
+```
+but the code is not working.
+
+# error on using ADD
 Getting an error
+I imported Decimal and it seems to work now
 ```
 TypeError at /admin/expenses/expense/add/
 unsupported operand type(s) for -: 'str' and 'decimal.Decimal'
