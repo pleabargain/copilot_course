@@ -3,6 +3,7 @@ Code should work out of the box if you have installed all the requirements.
 
 No. I have published a requirements.txt file.
 
+---
 
 Q: Where is this file?
 
@@ -28,8 +29,17 @@ I spent a lot of time here trying to figure out the terminal errors. :(
 
 If you are lucky you will get a URL. http://127.0.0.1:8000/
 
+Go here:
+
+http://127.0.0.1:8000/admin/
+
+You should see something like:
+![image](https://user-images.githubusercontent.com/640846/205493438-1ca7cc4f-f664-4660-8564-4b4acc41cf6f.png)
+
+
+
 YMMV!
 
 ---
 
-Can't say that I am super happy. The results in the class are NOT what I'm getting locally. The instructor, Ronnie Sheer (https://www.linkedin.com/learning/instructors/ronnie-sheer) didn't provide the source code for the working examples in the course.
+
