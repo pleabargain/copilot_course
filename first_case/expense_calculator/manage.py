@@ -3,6 +3,9 @@
 # when ready to run
 # py manage.py makemigrations
 
+# to run the server
+# py manage.py runserver
+
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
