@@ -1,3 +1,6 @@
+# what is this?
+It'a bit of a playground now.
+
 # current situation
 Code should work out of the box if you have installed all the requirements.
 
